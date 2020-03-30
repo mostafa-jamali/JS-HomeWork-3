@@ -1,0 +1,8 @@
+<script>
+    function replaceByItem(array, currentItem, newItem){
+        array.splice(array.indexOf(currentItem), 1, newItem);
+        return array;
+    }
+
+    alert( replaceByItem(['a','b','c','d','e','f'], 'e', 't') );
+</script>

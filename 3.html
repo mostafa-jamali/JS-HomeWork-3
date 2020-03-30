@@ -1,0 +1,12 @@
+<script>
+    arr=[[2,3],5,[[[2,9],4],4],1,0];
+    arr.reduce((arr,value) => arr.concat(value), [])
+    .reduce((arr,value) => arr.concat(value), [])
+    .reduce((arr,value) => arr.concat(value), []);
+    alert(arr);
+//  other method
+/* 1
+    arr=[[2,3],5,[[[2,9],4],4],1,0];
+    alert(arr.flat(Infinity));
+*/
+</script>

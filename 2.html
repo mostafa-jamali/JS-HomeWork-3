@@ -1,0 +1,8 @@
+<script>
+    function MyArray(...arrs){
+        let array=[];
+        for (let arr1 of arrs) array.push(...arr1);
+        return (array.sort((a, b) => a - b));
+    }
+    alert(MyArray([1,2,3], [4,5,10,11,6], [9,8,7,0]));
+</script>
